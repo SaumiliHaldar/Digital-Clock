@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Orbitron", sans-serif;
+    transition: all 0.4s ease;
+}
+
+section {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #aafcb8;
+    padding: 0 20px;
+}
+
+section.dark {
+    background-color: #24292d;
+}
+
+section .clockContainer {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    height: 220px;
+    max-width: 560px;
+    width: 100%;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    position: relative;
+}
+
+section.dark .clockContainer {
+    background-color: #323840;
+}
+
+section .clockContainer .icons i{
+    position: absolute;
+    right: 17px;
+    top: 17px;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: #24292d;
+    color: #fff;
+    text-align: center;
+    line-height: 30px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+section.dark .clockContainer .icons i {
+    background-color: #fff;
+    color: #323840;
+}
+
+.clockContainer .icons i.fa-sun {
+    opacity: 0;
+    pointer-events: none;
+}
+
+section.dark .clockContainer .icons i.fa-sun {
+    opacity: 1;
+    pointer-events: auto;
+    font-size: 16px;
+}
+
+section .clockContainer .timeContainer {
+    display: flex;
+    align-items: center;
+}
+
+.clockContainer .timeContainer .timeBox {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+
+.timeContainer .timeBox .am-pm {
+    position: absolute;
+    top: 0;
+    right: -50px;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+section.dark .timeContainer .timeBox .am-pm {
+    color: #fff;
+}
+
+.timeContainer .timeBox .timeText {
+    height: 100px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #e3f2fd;
+    border-radius: 6px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+section.dark .timeContainer .timeBox .timeText {
+    background: #24292d;
+}
+
+.timeContainer .timeBox .timeText,
+.timeContainer .timeBox .colon {
+    font-size: 35px;
+    font-weight: 600;
+}
+
+section.dark .timeContainer .timeBox .num,
+section.dark .timeContainer .colon {
+    color: #fff;
+}
+
+.timeContainer .timeBox .colon {
+    font-size: 40px;
+    margin: 0 10px;
+}
+
+.timeContainer .timeBox .timeText .text {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+section.dark .timeContainer .timeBox .text {
+    color: #fff;
+}
